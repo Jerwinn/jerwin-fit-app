@@ -15,4 +15,4 @@ const Navbar = (props: Props) => {
     </nav>
 }
 
-export default Navbar
+export default Navbar;
