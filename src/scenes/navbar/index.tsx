@@ -9,7 +9,29 @@ const Navbar = (props: Props) => {
   
     return <nav>
         <div className={`${flexBetween} fixed-top-0 z-30 w-full py-6`}>
-            app
+            <div className={`${flexBetween} mx-auto w-5/6`}>
+                <div className={`${flexBetween} w-full gap-16`}>
+                    {/* left side of navbar */}
+                    <img alt="logo" src={Logo}/> 
+
+                    {/* right side of the nav bar */}
+                    <div className={`${flexBetween} w-full`}>
+                        {/* Links */}
+                        <div className={`${flexBetween} gap-8 text-sm`}>
+                            <p>Home</p>
+                            <p>Benefits</p>
+                            <p>Our Classes</p>
+                            <p>Contact Us</p>  
+                        </div>
+
+                        <div className={`${flexBetween} gap-8`}>
+                            <p>Sign In</p>
+                            <button>Become a member</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
         </div>
     </nav>
