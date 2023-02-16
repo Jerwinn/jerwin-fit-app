@@ -99,16 +99,79 @@ const Benefits = ({ setSelectedPage }: Props) => {
           ))}
         </motion.div>
         {/*graphics and description */}
-        <div>
+        <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
           {/*graphics*/}
-          <img/>
+          <img
+            className="mx-auto"
+            alt="benefits-page-graphic"
+            src={BenefitsPageGraphic}
+          />
 
-           {/*description*/}
-           <div>
+          {/*description*/}
+          <div>
             {/*title*/}
-            {/*descriotion/}
+            <div className="relative">
+              <div className="before:absolute before:-top-20 before:left-20 before:z-[1] before:content-abstractwaves">
+                <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: 50 },
+                  visible: { opacity: 1, x: 0 },
+                }}>
+                  <HText>
+                    Millions of happymembers getting{" "}
+                    <span className="text-primary-500">FIT</span>
+                  </HText>
+                </motion.div>
+              </div>
+            </div>
+
+            {/*description*/}
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}>
+              <p className="my-5">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia curae; Aenean eget lorem sit amet leo faucibus
+                vehicula. Aenean rutrum lorem et metus ullamcorper malesuada.
+                Quisque nunc dui, dignissim et tempor et, luctus aliquam risus.
+                Duis nec nibh ultricies, fringilla erat vel, auctor diam. Ut sed
+                pretium purus. Morbi ac tortor id velit tristique porttitor.
+                Donec viverra scelerisque diam, nec finibus justo convallis eu.
+                Sed et ante ut libero pretium pellentesque. Mauris luctus odio
+                ut mi lacinia efficitur.
+              </p>
+              <p className="mb-5">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia curae; Aenean eget lorem sit amet leo faucibus
+                vehicula. Aenean rutrum lorem et metus ullamcorper malesuada.
+                Quisque nunc dui, dignissim et tempor et, luctus aliquam risus.
+                Duis nec nibh ultricies, fringilla erat vel, auctor diam. Ut sed
+                pretium purus. Morbi ac tortor id velit tristique porttitor.
+                Donec viverra scelerisque diam, nec finibus justo convallis eu.
+                Sed et ante ut libero pretium pellentesque. Mauris luctus odio
+                ut mi lacinia efficitur.
+              </p>
+            </motion.div>
             {/*Button */}
-            </div> 
+            <div className="relative mt-16">
+              <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
+                <ActionButton setSelectedPage={setSelectedPage}>
+                  {" "}
+                  Join Now{" "}
+                </ActionButton>
+              </div>
+            </div>
+          </div>
         </div>
       </motion.div>
     </section>
