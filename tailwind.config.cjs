@@ -4,20 +4,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "gray-20": "#F8F4EB",
-        "gray-50": "#EFE6E6",
+        "gray-20": "#ADE8F4",
+        "gray-50": "#001d3d",
         "gray-100": "#DFCCCC",
-        "gray-500": "#5E0000",
-        "primary-100": "#FFE1E0",
-        "primary-300": "#FFA6A3",
-        "primary-500": "#FF6B66",
+        "gray-500": "#073b4c",
+        "primary-100": "#0077B6",
+        "primary-300": "#90E0EF",
+        "primary-500": "#03045e",
         "secondary-400": "#FFCD5B",
         "secondary-500": "#FFC132",
       },
       backgroundImage: (theme) => ({
         "gradient-yellowred":
           "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
-        "mobile-home": "url('./assets/HomePageGraphic.png')",
+        "mobile-home": "url('./assets/je-performance-home-text.png')",
       }),
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
