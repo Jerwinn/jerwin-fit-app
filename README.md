@@ -1,5 +1,7 @@
 # jerwin-fit-app
-### This is a side-project aimed to build a website for an imaginary personal trainer.
+This is a side-project aimed to build a website for an imaginary personal trainer.
+I'm building this site as part of learning typescript and further improving on my knowledge through applying the concepts.
+
 ## Techonologies Used
 ### React, TypeScript, Vite.
 ## Features
