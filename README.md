@@ -3,13 +3,20 @@ This is a side-project aimed to build a website for an imaginary personal traine
 I'm building this site as part of learning typescript and further improving on my knowledge through applying the concepts.
 
 ## Techonologies Used
-React
-TypeScript
-Vite
-Framer Motion
-React-Hook-Forms
-## Features
-### Current Features
-#### Animation for content, navbar and contact form.
-### Future Features
-#### Register and Sign in page, member page which may contain excercises given and such.
+React <br />
+TypeScript <br />
+Vite <br />
+Framer Motion <br />
+React-Hook-Forms <br />
+## Current Features
+Responsive Navbar <br />
+Pretty content <br />
+Content Animation <br />
+Navbar <br />
+## Whats Next?
+Register page  <br />
+Sign in page <br />
+Connection to Back-end <br />
+Member Page showing exercises from API. <br />
+
+
